@@ -9,7 +9,7 @@
                 
                 <TextBox Width="100" Height="30" Watermark="Podaj imie: " x:Name="inputName"/>
                 
-                <ComboBox Width="100" Margin="10" x:Name="comboBox">
+                <ComboBox Width="100" Margin="10" x:Name="comboBox" HorizontalAlignment="Center">
                         <ComboBoxItem Content="Technologia"/>
                         <ComboBoxItem Content="Sport"/>
                         <ComboBoxItem Content="Kultura"/>
