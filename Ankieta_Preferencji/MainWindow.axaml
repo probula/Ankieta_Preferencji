@@ -5,5 +5,17 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Ankieta_Preferencji.MainWindow"
         Title="Ankieta_Preferencji">
-    Welcome to Avalonia!
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBox Width="100" Height="30" Watermark="Podaj imie: "/>
+                <ComboBox Width="100" Margin="10">
+                        <ComboBoxItem Content="Technologia"/>
+                        <ComboBoxItem Content="Sport"/>
+                        <ComboBoxItem Content="Kultura"/>
+                </ComboBox>
+                <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Center"/>
+                <Grid>
+                        <Grid.RowDefinitions/>
+                </Grid>
+        </StackPanel>
+       
 </Window>
