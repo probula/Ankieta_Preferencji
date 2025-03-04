@@ -12,10 +12,34 @@
                         <ComboBoxItem Content="Sport"/>
                         <ComboBoxItem Content="Kultura"/>
                 </ComboBox>
-                <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Center"/>
+                <Button x:Name="SubmitButton" Content="Wyślij" HorizontalAlignment="Center"/>
                 <Grid>
-                        <Grid.RowDefinitions/>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Pytanie 1"/>
+                        <CheckBox Grid.Row="0" Grid.Column="1" x:Name="Option1" Content="Tak" Margin="10"/>
+                        <CheckBox Grid.Row="0" Grid.Column="2" x:Name="Option2" Content="Nie" Margin="10"/>
+                        
+                        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Pytanie 2"/>
+                        <CheckBox Grid.Row="1" Grid.Column="1" x:Name="Option3" Content="Tak" Margin="10"/>
+                        <CheckBox Grid.Row="1" Grid.Column="2" x:Name="Option4" Content="Nie" Margin="10"/>
+                        
+                        <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Pytanie 3"/>
+                        <CheckBox Grid.Row="2" Grid.Column="1" x:Name="Option5" Content="Tak" Margin="10"/>
+                        <CheckBox Grid.Row="2" Grid.Column="2" x:Name="Option6" Content="Nie" Margin="10"/>
                 </Grid>
+                <Button x:Name="SubmitButton2" Content="Wyświetl" HorizontalAlignment="Center"/>
+                
         </StackPanel>
        
 </Window>
