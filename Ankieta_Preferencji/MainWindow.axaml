@@ -27,29 +27,35 @@
                         <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         
                         <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Pytanie 1"/>
                         <CheckBox Grid.Row="0" Grid.Column="1" x:Name="Option1" Content="Tak" Margin="10"/>
-                        <CheckBox Grid.Row="0" Grid.Column="2" x:Name="Option2" Content="Nie" Margin="10"/>
                         
                         <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Pytanie 2"/>
-                        <CheckBox Grid.Row="1" Grid.Column="1" x:Name="Option3" Content="Tak" Margin="10"/>
-                        <CheckBox Grid.Row="1" Grid.Column="2" x:Name="Option4" Content="Nie" Margin="10"/>
+                        <CheckBox Grid.Row="1" Grid.Column="1" x:Name="Option2" Content="Tak" Margin="10"/>
                         
                         <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Pytanie 3"/>
-                        <CheckBox Grid.Row="2" Grid.Column="1" x:Name="Option5" Content="Tak" Margin="10"/>
-                        <CheckBox Grid.Row="2" Grid.Column="2" x:Name="Option6" Content="Nie" Margin="10"/>
+                        <CheckBox Grid.Row="2" Grid.Column="1" x:Name="Option3" Content="Tak" Margin="10"/>
                 </Grid>
                 
-                <Button x:Name="SubmitButton2" Content="Wyświetl" HorizontalAlignment="Center"/>
+                <Button x:Name="SubmitButton2" Content="Wyświetl" HorizontalAlignment="Center" Click="SubmitTwo"/>
                 
                 <TextBlock Text="Imię: "/>
                 <TextBlock x:Name="ShowTextBlock1" Width="300" Margin="0,20,0,0" />
                 
                 <TextBlock Text="Zainteresowania: "/>
                 <TextBlock x:Name="ShowTextBlock2" Width="300" Margin="0,20,0,0" />
+                
+                
+                <TextBlock Text="Pytanie 1: "/>
+                <TextBlock x:Name="ShowTextBlock3" Width="300" Margin="0,20,0,0" />
+                
+                <TextBlock Text="Pytanie 2: "/>
+                <TextBlock x:Name="ShowTextBlock4" Width="300" Margin="0,20,0,0" />
+                
+                <TextBlock Text="Pytanie 3: "/>
+                <TextBlock x:Name="ShowTextBlock5" Width="300" Margin="0,20,0,0" />
                 
         </StackPanel>
        
