@@ -6,13 +6,17 @@
         x:Class="Ankieta_Preferencji.MainWindow"
         Title="Ankieta_Preferencji">
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                <TextBox Width="100" Height="30" Watermark="Podaj imie: "/>
-                <ComboBox Width="100" Margin="10">
+                
+                <TextBox Width="100" Height="30" Watermark="Podaj imie: " x:Name="inputName"/>
+                
+                <ComboBox Width="100" Margin="10" x:Name="comboBox">
                         <ComboBoxItem Content="Technologia"/>
                         <ComboBoxItem Content="Sport"/>
                         <ComboBoxItem Content="Kultura"/>
                 </ComboBox>
-                <Button x:Name="SubmitButton" Content="Wyślij" HorizontalAlignment="Center"/>
+                
+                <Button x:Name="SubmitButton" Content="Wyślij" HorizontalAlignment="Center" Click="SubmitOne"/>
+                
                 <Grid>
                         <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -38,7 +42,14 @@
                         <CheckBox Grid.Row="2" Grid.Column="1" x:Name="Option5" Content="Tak" Margin="10"/>
                         <CheckBox Grid.Row="2" Grid.Column="2" x:Name="Option6" Content="Nie" Margin="10"/>
                 </Grid>
+                
                 <Button x:Name="SubmitButton2" Content="Wyświetl" HorizontalAlignment="Center"/>
+                
+                <TextBlock Text="Imię: "/>
+                <TextBlock x:Name="ShowTextBlock1" Width="300" Margin="0,20,0,0" />
+                
+                <TextBlock Text="Zainteresowania: "/>
+                <TextBlock x:Name="ShowTextBlock2" Width="300" Margin="0,20,0,0" />
                 
         </StackPanel>
        
